@@ -8,12 +8,17 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<div>
-                                  <NavBar />
-                                  <div className="mainBody">
-                                    <Outlet />
-                                  </div>
-                                 </div>}>
+        <Route
+          path="/"
+          element={
+            <div>
+              <NavBar />
+              <div className="mainBody">
+                <Outlet />
+              </div>
+            </div>
+          }
+        >
           <Route index element={<Home />} />
           <Route path="/events" element={<Events />} />
           <Route path="/power-rankings" element={<PowerRankings />} />
