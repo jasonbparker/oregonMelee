@@ -9,8 +9,8 @@ const PowerRankings = () => {
         {RANKINGS.map((ranking) => (
           <div>
             <p>{ranking.region}</p>
-            <img src={ranking.image} alt="rankingImages" />
-            <p>{ranking.typedOut}</p>
+            <img src={ranking.image} alt={ranking.alt} />
+            {/* todo - add startgg links to each player */}
             <div className="description"></div>
           </div>
         ))}
